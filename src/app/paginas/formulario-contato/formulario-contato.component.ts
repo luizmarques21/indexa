@@ -22,12 +22,20 @@ export class FormularioContatoComponent {
 
   constructor() {
     this.contatoForm = new FormGroup({
-      nome: new FormControl(''),
-      telefone: new FormControl(''),
-      email: new FormControl(''),
+      nome: new FormControl('Nay'),
+      telefone: new FormControl('99 9999-9999'),
+      email: new FormControl('nay@email.com'),
       aniversario: new FormControl(''),
       redes: new FormControl(''),
-      observacoes: new FormControl(''),
+      observacoes: new FormControl('Olá Mundo!'),
     })
+  }
+
+  salvarContato() {
+    console.log(this.contatoForm.value)
+  }
+
+  cancelar() {
+    console.log('Submissão cancelada');
   }
 }
