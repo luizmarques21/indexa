@@ -6,7 +6,6 @@ import {CabecalhoComponent} from "../../componentes/cabecalho/cabecalho.componen
 import {SeparadorComponent} from "../../componentes/separador/separador.component";
 import {ContatoComponent} from "../../componentes/contato/contato.component";
 import {FormsModule} from "@angular/forms";
-import {FormularioContatoComponent} from "../formulario-contato/formulario-contato.component";
 import {ContatoService} from "../../services/contato.service";
 import {Contato} from "../../componentes/contato/contato";
 
@@ -20,7 +19,6 @@ import {Contato} from "../../componentes/contato/contato";
     SeparadorComponent,
     ContatoComponent,
     FormsModule,
-    FormularioContatoComponent,
     RouterLink
   ],
   templateUrl: './lista-contatos.component.html',
@@ -32,7 +30,8 @@ export class ListaContatosComponent implements OnInit {
 
   filtroPorTexto: string = '';
 
-  constructor(private contatoService: ContatoService) {}
+  constructor(private contatoService: ContatoService) {
+  }
 
   ngOnInit() {
     this.contatoService.obterContatos().subscribe(listaContatos => {
