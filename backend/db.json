@@ -3,7 +3,7 @@
     {
       "nome": "Maria",
       "telefone": "99 99999999",
-      "email": "maria@email.com",
+      "email": "maria@email.com.br",
       "aniversario": "1995-06-01",
       "redes": "",
       "observacoes": "",
@@ -17,6 +17,15 @@
       "redes": "",
       "observacoes": "",
       "id": 2
+    },
+    {
+      "nome": "Nay",
+      "telefone": "99 99999999",
+      "email": "teste@mail.com",
+      "aniversario": "",
+      "redes": "",
+      "observacoes": "",
+      "id": 3
     }
   ]
 }
